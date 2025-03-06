@@ -1,7 +1,19 @@
 [package]
 name = "uni_vault"
 version = "0.0.0"
+description = """
+uni_vault is a high-level Rust crate that provides secure vault functionality through advanced encryption methods. It leverages Trezor Ethereum signatures as a seed to generate SSH private keys and corresponding Rage key pairs, enabling asymmetric encryption and decryption operations. Built atop the signature_to_keys crate, uni_vault abstracts complex cryptographic processes into an accessible API, ensuring secure storage and management of sensitive data.
+"""
+authors = ["Ryder Freeman"]
 edition = "2021"
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://docs.rs/uni_vault"
+repository = "https://github.com/OnionVault/onion_vault"
+homepage = "https://github.com/RyderFreeman4Logos/onion_vault/tree/main/crates/uni_vault"
+keywords = ["deterministic", "subkey", "derivation", "cryptography", "signature"]
+categories = ["cryptography", "security", "encryption", ""]
+rust-version = "1.85"
 
 [dependencies]
 signature_to_keys = { path = "../signature_to_keys" }
