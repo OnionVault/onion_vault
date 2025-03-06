@@ -16,7 +16,7 @@ categories = ["cryptography", "security", "encryption", ""]
 rust-version = "1.85"
 
 [dependencies]
-signature_to_keys = { path = "../signature_to_keys" }
+signature_to_keys = "0.0.1"
 aes-gcm-siv = "0.11.1"
 age = { version = "0.11.1" }
 anyhow = "1.0.95"

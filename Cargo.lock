@@ -2073,7 +2073,7 @@ dependencies = [
  "passwords",
  "serde",
  "serde_json",
- "signature_to_keys",
+ "signature_to_keys 0.0.1",
  "uni_vault",
  "zeroize",
 ]
@@ -2088,7 +2088,7 @@ dependencies = [
  "derive_builder",
  "serde",
  "serde_json",
- "signature_to_keys",
+ "signature_to_keys 0.0.1",
  "uni_vault",
  "zeroize",
 ]
@@ -2844,6 +2844,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "signature_to_keys"
+version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6a36299c73ac7112ad435b6b12e24f129b4af423b57bac6adfb04c4bebcf235"
+dependencies = [
+ "age",
+ "anyhow",
+ "bech32 0.11.0",
+ "derive_builder",
+ "hex",
+ "hkdf",
+ "serde",
+ "serde_json",
+ "sha2",
+ "ssh-key",
+ "trezor-client",
+ "x25519-dalek",
+ "zeroize",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3196,7 +3217,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2",
- "signature_to_keys",
+ "signature_to_keys 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio",
  "trezor-client",
  "typenum",
