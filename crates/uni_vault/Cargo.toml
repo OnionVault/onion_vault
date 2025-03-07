@@ -13,7 +13,7 @@ repository = "https://github.com/OnionVault/onion_vault"
 homepage = "https://github.com/RyderFreeman4Logos/onion_vault/tree/main/crates/uni_vault"
 keywords = ["deterministic", "subkey", "derivation", "cryptography", "signature", ]
 categories = ["cryptography", "cryptography::cryptocurrencies", ]
-rust-version = "1.85"
+rust-version = "1.84.1"
 
 [dependencies]
 signature_to_keys = "0.0.1"

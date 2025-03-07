@@ -15,7 +15,7 @@ documentation = "https://docs.rs/signature_to_keys"
 repository = "https://github.com/OnionVault/onion_vault"
 keywords = ["deterministic", "subkey", "derivation", "cryptography", "signature"]
 categories = ["cryptography", ]
-rust-version = "1.85"
+rust-version = "1.84.1"
 
 [dependencies]
 age = { version = "0.11.1", features = ["armor", "ssh"] }
