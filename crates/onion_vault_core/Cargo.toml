@@ -1,6 +1,6 @@
 [package]
 name = "onion_vault_core"
-version = "0.0.2"
+version = "0.0.3"
 description = """
 Core framework for OnionVault password manager, shared across CLI, TUI, GUI, Android, and iOS clients
 """
@@ -19,8 +19,8 @@ rust-version = "1.84.1"
 anyhow = { version = "1.0.95", features = ["backtrace"] }
 serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.135"
-uni_vault = "0.0.2"
-signature_to_keys = "0.0.2"
+uni_vault = "0.0.3"
+signature_to_keys = "0.0.3"
 zeroize = { version = "1.8.1", features = ["std", "zeroize_derive"] }
 derive_builder = { version = "0.20.2", features = ["alloc", "clippy"] }
 age = { version = "0.11.1", features = ["ssh"] }
