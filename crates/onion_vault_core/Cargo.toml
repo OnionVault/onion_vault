@@ -1,15 +1,26 @@
 [package]
 name = "onion_vault_core"
-version = "0.1.0"
-authors = ["t4nature <t4nature@proton.me>"]
+version = "0.0.2"
+description = """
+Core framework for OnionVault password manager, shared across CLI, TUI, GUI, Android, and iOS clients
+"""
+authors = ["Ryder Freeman"]
 edition = "2021"
+license = "Apache-2.0"
+readme = "README.md"
+documentation = "https://docs.rs/onion_vault_core"
+homepage = "https://github.com/RyderFreeman4Logos/onion_vault/tree/main/crates/onion_vault_core"
+repository = "https://github.com/OnionVault/onion_vault"
+keywords = ["password", "security", "cross-platform", "cryptography", "password-manager"]
+categories = ["cryptography", "authentication"]
+rust-version = "1.84.1"
 
 [dependencies]
 anyhow = { version = "1.0.95", features = ["backtrace"] }
 serde = { version = "1.0.217", features = ["derive"] }
 serde_json = "1.0.135"
-uni_vault = { path = "../uni_vault" }
-signature_to_keys = { path = "../signature_to_keys" }
+uni_vault = "0.0.2"
+signature_to_keys = "0.0.2"
 zeroize = { version = "1.8.1", features = ["std", "zeroize_derive"] }
 derive_builder = { version = "0.20.2", features = ["alloc", "clippy"] }
 age = { version = "0.11.1", features = ["ssh"] }
