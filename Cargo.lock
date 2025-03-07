@@ -2074,13 +2074,13 @@ dependencies = [
  "serde",
  "serde_json",
  "signature_to_keys 0.0.2",
- "uni_vault",
+ "uni_vault 0.0.2",
  "zeroize",
 ]
 
 [[package]]
 name = "onion_vault_core"
-version = "0.1.0"
+version = "0.0.2"
 dependencies = [
  "age",
  "anyhow",
@@ -2088,8 +2088,8 @@ dependencies = [
  "derive_builder",
  "serde",
  "serde_json",
- "signature_to_keys 0.0.2",
- "uni_vault",
+ "signature_to_keys 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "uni_vault 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
  "zeroize",
 ]
 
@@ -2865,6 +2865,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "signature_to_keys"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "08acd115144ae3c38b53bc04d09b3a041e6decc5729576b3fa994b9a78eed875"
+dependencies = [
+ "age",
+ "anyhow",
+ "bech32 0.11.0",
+ "derive_builder",
+ "hex",
+ "hkdf",
+ "serde",
+ "serde_json",
+ "sha2",
+ "ssh-key",
+ "trezor-client",
+ "x25519-dalek",
+ "zeroize",
+]
+
+[[package]]
 name = "slab"
 version = "0.4.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3199,6 +3220,36 @@ checksum = "42ff0bf0c66b8238c6f3b578df37d0b7848e55df8577b3f74f92a69acceeb825"
 [[package]]
 name = "uni_vault"
 version = "0.0.2"
+dependencies = [
+ "aes-gcm-siv",
+ "age",
+ "anyhow",
+ "argon2",
+ "base58ck",
+ "chacha20poly1305",
+ "chrono",
+ "derive_builder",
+ "generic-array 1.2.0",
+ "git2",
+ "hkdf",
+ "rand",
+ "rand_core",
+ "ratatui",
+ "serde",
+ "serde_json",
+ "sha2",
+ "signature_to_keys 0.0.1",
+ "tokio",
+ "trezor-client",
+ "typenum",
+ "zeroize",
+]
+
+[[package]]
+name = "uni_vault"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a6238144342c11b8b707a9ff84d7d8e252c81460592d735a61b05668ea70a5f6"
 dependencies = [
  "aes-gcm-siv",
  "age",
