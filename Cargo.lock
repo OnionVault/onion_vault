@@ -2073,7 +2073,7 @@ dependencies = [
  "passwords",
  "serde",
  "serde_json",
- "signature_to_keys 0.0.1",
+ "signature_to_keys 0.0.2",
  "uni_vault",
  "zeroize",
 ]
@@ -2088,7 +2088,7 @@ dependencies = [
  "derive_builder",
  "serde",
  "serde_json",
- "signature_to_keys 0.0.1",
+ "signature_to_keys 0.0.2",
  "uni_vault",
  "zeroize",
 ]
@@ -2827,6 +2827,8 @@ dependencies = [
 [[package]]
 name = "signature_to_keys"
 version = "0.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e6a36299c73ac7112ad435b6b12e24f129b4af423b57bac6adfb04c4bebcf235"
 dependencies = [
  "age",
  "anyhow",
@@ -2845,9 +2847,7 @@ dependencies = [
 
 [[package]]
 name = "signature_to_keys"
-version = "0.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e6a36299c73ac7112ad435b6b12e24f129b4af423b57bac6adfb04c4bebcf235"
+version = "0.0.2"
 dependencies = [
  "age",
  "anyhow",
@@ -3217,7 +3217,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2",
- "signature_to_keys 0.0.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "signature_to_keys 0.0.1",
  "tokio",
  "trezor-client",
  "typenum",
