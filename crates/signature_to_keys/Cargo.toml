@@ -1,6 +1,6 @@
 [package]
 name = "signature_to_keys"
-version = "0.0.1"
+version = "0.0.2"
 description = """
 A deterministic subkey derivation crate that signs human-readable strings using a master private key,
 hashes the signature via SHA-256 to generate a 256-bit seed,
