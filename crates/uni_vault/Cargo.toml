@@ -1,6 +1,6 @@
 [package]
 name = "uni_vault"
-version = "0.0.2"
+version = "0.0.3"
 description = """
 uni_vault is a high-level Rust crate that provides secure vault functionality through advanced encryption methods. It leverages Trezor Ethereum signatures as a seed to generate SSH private keys and corresponding Rage key pairs, enabling asymmetric encryption and decryption operations. Built atop the signature_to_keys crate, uni_vault abstracts complex cryptographic processes into an accessible API, ensuring secure storage and management of sensitive data.
 """
@@ -16,7 +16,7 @@ categories = ["cryptography", "cryptography::cryptocurrencies", ]
 rust-version = "1.84.1"
 
 [dependencies]
-signature_to_keys = "0.0.1"
+signature_to_keys = "0.0.3"
 aes-gcm-siv = "0.11.1"
 age = { version = "0.11.1" }
 anyhow = "1.0.95"
