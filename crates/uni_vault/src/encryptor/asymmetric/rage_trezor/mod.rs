@@ -139,7 +139,7 @@ impl RageTrezorEncryptor {
     /// this function will generate a new recipient using the Trezor identity.
     pub fn get_rage_recipients(&mut self) -> anyhow::Result<Vec<Box<dyn age::Recipient>>> {
         if self.should_create_new_recipient ||
-            self.recipients.len() == 0 ||
+            self.recipients.is_empty() ||
             self.public_key.recipient_str.is_none() {
             let identity = self.get_rage_identity()?;
             let recipient = Recipient::try_from(identity)

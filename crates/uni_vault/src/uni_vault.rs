@@ -150,7 +150,7 @@ impl<T: Encryptor + Serialize + for<'de> Deserialize<'de>> UniVault<T> {
     pub fn decrypt_and_decode_json_string(
         json_str: &str,
     ) -> anyhow::Result<Self> {
-        let mut uni_vault = UniVault::from_json(&json_str)?;
+        let mut uni_vault = UniVault::from_json(json_str)?;
 
         uni_vault.decrypt()?;
 
