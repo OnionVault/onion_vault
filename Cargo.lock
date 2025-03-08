@@ -2073,7 +2073,7 @@ dependencies = [
  "passwords",
  "serde",
  "serde_json",
- "signature_to_keys 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "signature_to_keys 0.0.3",
  "uni_vault 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "zeroize",
 ]
@@ -2088,7 +2088,7 @@ dependencies = [
  "derive_builder",
  "serde",
  "serde_json",
- "signature_to_keys 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "signature_to_keys 0.0.3",
  "uni_vault 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "zeroize",
 ]
@@ -2105,7 +2105,7 @@ dependencies = [
  "derive_builder",
  "serde",
  "serde_json",
- "signature_to_keys 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "signature_to_keys 0.0.3",
  "uni_vault 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "zeroize",
 ]
@@ -2844,21 +2844,6 @@ dependencies = [
 [[package]]
 name = "signature_to_keys"
 version = "0.0.3"
-dependencies = [
- "age",
- "anyhow",
- "derive_builder",
- "serde",
- "serde_json",
- "sha2",
- "ssh-key",
- "trezor-client",
- "zeroize",
-]
-
-[[package]]
-name = "signature_to_keys"
-version = "0.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c1941141e025aa971fe1a2189266f7efef47f402bc3278da4686190e268ff523"
 dependencies = [
@@ -2874,6 +2859,22 @@ dependencies = [
  "ssh-key",
  "trezor-client",
  "x25519-dalek",
+ "zeroize",
+]
+
+[[package]]
+name = "signature_to_keys"
+version = "0.1.0"
+dependencies = [
+ "age",
+ "anyhow",
+ "curve25519-dalek",
+ "derive_builder",
+ "serde",
+ "serde_json",
+ "sha2",
+ "ssh-key",
+ "trezor-client",
  "zeroize",
 ]
 
@@ -3230,7 +3231,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2",
- "signature_to_keys 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "signature_to_keys 0.0.3",
  "tokio",
  "trezor-client",
  "typenum",
@@ -3260,7 +3261,7 @@ dependencies = [
  "serde",
  "serde_json",
  "sha2",
- "signature_to_keys 0.0.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "signature_to_keys 0.0.3",
  "tokio",
  "trezor-client",
  "typenum",

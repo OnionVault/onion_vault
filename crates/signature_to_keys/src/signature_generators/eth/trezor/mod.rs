@@ -79,6 +79,8 @@ impl SignatureToKeyGenerator for TrezorGenerator {
 impl crate::SshEd25519KeyGenerator for TrezorGenerator {}
 #[cfg(feature = "rage")]
 impl crate::RageIdentityGenerator for TrezorGenerator {}
+#[cfg(feature = "scalar")]
+impl crate::ScalarGenerator for TrezorGenerator {}
 
 impl TrezorGenerator {
     /// Sign a message using a connected Trezor device
